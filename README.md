@@ -35,6 +35,20 @@ The build will:
 
 Per-route titles, descriptions, Open Graph tags, Twitter cards, canonical URLs, and Organization JSON-LD are defined in [`src/seo/config.js`](src/seo/config.js).
 
+## Deploy to GitHub Pages (free live URL)
+
+Live site: **https://anwesh257.github.io/lenxtech-website/**
+
+Every push to `main` triggers [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) to build and publish automatically.
+
+**One-time GitHub setup:**
+
+1. Open [github.com/anwesh257/lenxtech-website/settings/pages](https://github.com/anwesh257/lenxtech-website/settings/pages)
+2. Under **Build and deployment** → **Source**, select **GitHub Actions**
+3. Push to `main` (or re-run the workflow from the **Actions** tab)
+
+Share the URL above with anyone — works on mobile and desktop, no install needed.
+
 ## Deploy to Hostinger
 
 1. Run `npm run build` with `VITE_SITE_URL` set in `.env.production`
