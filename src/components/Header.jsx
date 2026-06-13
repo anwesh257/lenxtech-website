@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { navLinks } from '../data/content'
+import { assetUrl } from '../base-path.js'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -28,7 +29,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <Link to="/" className="logo-link" onClick={() => setOpen(false)}>
-          <img src="/assets/logo.svg" alt="Lenxtech" className="logo-img" width="160" height="40" />
+          <img src={assetUrl('/assets/logo.svg')} alt="Lenxtech" className="logo-img" width="160" height="40" />
         </Link>
         <nav className="nav-desktop" aria-label="Main navigation">
           {navLinks.map((l) => (

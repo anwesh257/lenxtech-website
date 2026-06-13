@@ -1,6 +1,7 @@
 // AI-Generated Code - 2026-06-04 - Composer
 import SectionTitle from '../components/SectionTitle'
 import ContactForm from '../components/ContactForm'
+import { assetUrl } from '../base-path.js'
 import { offices, addresses } from '../data/content'
 
 export default function ContactUs() {
@@ -12,7 +13,7 @@ export default function ContactUs() {
           <div className="office-grid">
             {offices.map((o) => (
               <div className="office-card" key={o.location}>
-                <img src={o.image} alt={o.location} loading="lazy" />
+                <img src={assetUrl(o.image)} alt={o.location} loading="lazy" />
                 <h3>{o.region}</h3>
                 <p><em>{o.location}</em></p>
               </div>
