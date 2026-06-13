@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" role="img" aria-label="Lenxtech">
+  <defs><linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0ea5e9"/><stop offset="100%" style="stop-color:#0369a1"/>
+  </linearGradient></defs>
+  <rect x="0" y="4" width="40" height="40" rx="8" fill="url(#lg)"/>
+  <text x="20" y="30" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="18" font-weight="700">L</text>
+  <text x="52" y="32" fill="#0f172a" font-family="system-ui,sans-serif" font-size="22" font-weight="700">Lenxtech</text>
+</svg>
